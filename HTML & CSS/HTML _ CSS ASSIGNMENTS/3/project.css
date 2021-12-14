@@ -1,0 +1,79 @@
+.heading{
+    background-image: url(images/1883962.jpg);
+    text-align: center;
+    background-size: cover;
+    /* display: flex; */
+    height: 100vh;
+    background-position :center;
+    flex-direction: column;
+    padding: 10px 20px;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading h2{
+    font-size: 50px;
+    /* line-height: 1.2; */
+    display: block;
+    margin-block-start: 4em;
+    color: white;
+    margin-block-end: 00.67em;
+    font-size: 60px;
+}
+.heading p{
+    font-size: 20px;
+    color: snow;
+    margin-block-end: 2em;
+}
+.heading .button{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: wheat 2px solid ;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+ 
+    
+}
+.heading .button:hover{
+    background: rosybrown;
+}
+.first{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.second{
+    background-color: slategrey;
+    color: tan;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;   
+}
+#third{
+    display: flex;
+}
+#third div{
+    padding: 20px;
+}
+div{
+    display: block;
+}
+#third .box1{
+    background-color: teal;
+    color: white;
+}
+#third .box2{
+    background-color: white;
+    color: black;
+}
+#third .box3{
+    background-color: teal;
+    color: white;
+}

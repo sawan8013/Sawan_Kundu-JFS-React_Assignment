@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Craetion Using Javasript</title>
+    <style>
+      table,tr,td{
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table Craeted</h1>
+    <h3>Taking input from user</h3>
+
+    <button type="button" onclick="createTable()">Create Table</button>
+    <br /><br />
+    <table id="userTable"></table>
+
+    <script>
+      function createTable() {
+        var usertable = document.getElementById("userTable");
+        rn = window.prompt("Input number of rows");
+        cn = window.prompt("Input number of columns");
+
+        for (var r = 0; r < parseInt(rn, 10); r++) {
+          var x = usertable.insertRow(r);
+          for (var c = 0; c < parseInt(cn, 10); c++) {
+            var y = x.insertCell(c);
+            y.innerHTML = "Row-" + r + " Column-" + c;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
