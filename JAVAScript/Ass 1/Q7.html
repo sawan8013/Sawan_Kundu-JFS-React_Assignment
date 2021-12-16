@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <p id="demo">Paragraph tag</p>
+    <script>
+        function dollerFunction()
+        {
+            rupees=doller*74.28;
+            document.write("currency in rupees is:"+rupees+"rupees");
+            document.write("<br/>");
+            yen=doller*109.14;
+            document.write("currency in yen is :"+yen+"yen");
+            document.write("<br/>");
+            euro=doller*0.84;
+            document.write("currency in euro is :"+euro+"euro");
+            document.write("<br/>");
+            pound=doller*0.72;
+            document.write("currency in pound is :"+pound+"pound");
+        }
+        var doller=window.prompt("enter doller");
+        document.write("the doller entered is:"+doller);
+        document.write("<br/>");
+        document.getElementById("demo").innerHTML=dollerFunction();
+    </script>
+</body>
+</html>
